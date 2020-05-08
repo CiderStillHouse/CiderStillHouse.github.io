@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title> Cider Still House </title>
+    <!-- Site Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Boutique Cider Distillery">
+    <meta name="keywords" content="Apples, Apple Orchard, Cider, Distillery, Still, Farm, Cider Still House, Baldwin City, Kansas, KS, Baldwin, Hard Cider">
+    <meta name="author" content="Max Murphy">
+    
+    <!-- Bootstrap Layout css -->
+    <link rel="stylesheet"; href="bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Layout js -->
+    <script src="libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- Custom Style css -->
+    <link rel="stylesheet"; href="styles/main_styles.css">
+    <link rel="stylesheet"; href="styles/main_fonts.css">
+    <link rel="stylesheet"; href="styles/main_containers.css">
+    <link rel="stylesheet"; href="styles/main_header_menu.css">
+</head>
+    
+<body>
+    <div class="container container-fluid container-fluid-body"> 
+        <div class="row row-nav">
+            <!-- Adds main "floating" header menu that is always there -->
+            <div class="headerbanner"; id="offset">
+                <h2>Cider Still House</h2>
+                <p class="subtitle"; id="subheader">
+                    Baldwin City | Kansas
+                </p>
+            </div>
+            <!-- Navigation: Pills -->
+            <ul class="nav nav-pills nav-justified nav-pills-frozen"; id="section_pills">
+                <li class="active"><a data-toggle="pill" href="#visit">Visit</a></li>
+                <li><a data-toggle="pill" href="#ciders">Ciders</a></li>
+                <li><a data-toggle="pill" href="#spirits">Spirits</a></li>
+                <li><a data-toggle="pill" href="#contact">Contact</a></li>
+            </ul>  
+        </div>
+        <div class="row row-main"; id="body_row">
+            <div class="container container-fluid container-fluid-main"; id="body_grid_container">              
+                <!-- "Main" Navigation Tabs: Contents -->
+                <div class="tab tab-content tab-content-main"; id="section_display">
+                    <!-- Abstract -->
+                    <div class="tab tab-pane tab-pane-main fade in active"; id="visit">
+                        <h3>Visit Us</h3>
+                        <p><em>Map location goes here. Virtual tour?</em></p>
+                    </div>
+                    
+                    <!-- Ciders -->
+                    <div class="tab tab-pane tab-pane-main fade"; id="ciders">
+                        <div class="panel"; id="ciders_layout">
+                            <!-- About our Ciders -->
+                            <h3>About our ciders</h3>
+                            <p><em>Description</em></p>
+                            
+                            <!-- Ciders: Tabbed -->
+                            <h3>On Tap</h3>
+                            <div class="tab tab-content display"; id="figure_display">
+                                <ul class="nav nav-tabs display"; id="fig_tabs">
+                                    <li class="active"><a data-toggle="pill" href="#cider_a_tab">Cider-A</a></li>
+                                    <li><a data-toggle="pill" href="#cider_b_tab">Cider-B</a></li>
+                                    <li><a data-toggle="pill" href="#cider_c_tab">Cider-C</a></li>
+                                </ul> 
+                                <div class="tab tab-pane fade in active"; id="cider_a_tab"; style="width:1080px">
+                                    <iframe class="figholder"; name="cider_a_display"; src="Ciders/Cider-A.html"; id="cider_a_iframe"></iframe>
+                                </div>
+                                <div class="tab tab-pane fade"; id="cider_b_tab">
+                                    <iframe class="figholder"; name="cider_b_display"; src="Ciders/Cider-B.html"; id="cider_b_iframe"></iframe>
+                                </div>
+                                <div class="tab tab-pane fade"; id="cider_c_tab">
+                                    <iframe class="figholder"; name="cider_c_display"; src="Ciders/Cider-C.html"; id="cider_c_iframe"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Spirits -->
+                    <div class="tab tab-pane tab-pane-main fade"; id="spirits">
+                        <div class="panel"; id="spirits_layout">
+                            <!-- About our Ciders -->
+                            <h3>About our ciders</h3>
+                            <p><em>Description</em></p>
+                            
+                            <!-- Ciders: Tabbed -->
+                            <h3>On Tap</h3>
+                            <div class="tab tab-content display"; id="spirits_display">
+                                <ul class="nav nav-tabs display"; id="spirits_tabs">
+                                    <li class="active"><a data-toggle="pill" href="#spirit_a_tab">Spirit-A</a></li>
+                                    <li><a data-toggle="pill" href="#spirit_b_tab">Spirit-B</a></li>
+                                </ul> 
+                                <div class="tab tab-pane fade in active"; id="spirit_a_tab">
+                                    <iframe class="figholder"; name="spirit_a_display"; src="Spirits/Spirit-A.html"; id="spirit_a_iframe"></iframe>
+                                </div>
+                                <div class="tab tab-pane fade"; id="spirit_b_tab">
+                                    <iframe class="figholder"; name="spirit_b_display"; src="Spirits/Spirit-B.html"; id="spirit_b_iframe"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact -->
+                    <div class="tab-pane tab-pane-main fade"; id="contact";>
+                        <h3>Contact Us</h3>
+                        <p><em>Contact info goes here.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

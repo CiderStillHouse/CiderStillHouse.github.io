@@ -47,9 +47,16 @@ iframe {
     border-style: none;
 }
 
+iframe.gmaps {
+    width:600px;
+    height:450px;
+}
+
 .display {
     width:1080px;
     background-color: transparent;
+    border:0px;
+    
 }
 
 .panel {

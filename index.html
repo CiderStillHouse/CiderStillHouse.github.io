@@ -21,9 +21,23 @@
     <link rel="stylesheet"; href="styles/main_fonts.css">
     <link rel="stylesheet"; href="styles/main_containers.css">
     <link rel="stylesheet"; href="styles/main_header_menu.css">
+    
+    <script type="text/javascript"; src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("orchard"),
+            url = "https://public.tableau.com/views/CiderStillHouse/OrchardMap",
+            options = {
+                hideTabs: true
+            };
+
+            // Create a viz object and embed it in the container div.
+            var viz = new tableau.Viz(containerDiv, url, options); 
+        }
+    </script>
 </head>
     
-<body>
+<body onload="initViz();">
     <div class="container container-fluid container-fluid-body"> 
         <div class="row row-nav">
             <!-- Adds main "floating" header menu that is always there -->
@@ -38,6 +52,7 @@
                 <li class="active"><a data-toggle="pill" href="#visit">Visit</a></li>
                 <li><a data-toggle="pill" href="#ciders">Ciders</a></li>
                 <li><a data-toggle="pill" href="#spirits">Spirits</a></li>
+                <li><a data-toggle="pill" href="#webstore">Store</a></li>
                 <li><a data-toggle="pill" href="#contact">Contact</a></li>
             </ul>  
         </div>
@@ -48,7 +63,9 @@
                     <!-- Abstract -->
                     <div class="tab tab-pane tab-pane-main fade in active"; id="visit">
                         <h3>Visit Us</h3>
-                        <p><em>Map location goes here. Virtual tour?</em></p>
+                        <iframe class="gmaps"; src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3110.77059619453!2d-95.1818981300104!3d38.76896532799993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1589730721829!5m2!1sen!2sus"; frameborder="0"; allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <p class="caption"><em>From Google Maps</em></p>
+                        <div id="orchard"></div> 
                     </div>
                     
                     <!-- Ciders -->
@@ -101,6 +118,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="tab-pane tab-pane-main fade"; id="webstore";>
+                        <h3>Store</h3>
+                        <p><em>Store goes here (if applicable).</em></p>
                     </div>
                     
                     <!-- Contact -->

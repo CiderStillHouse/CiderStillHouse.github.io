@@ -52,3 +52,14 @@ p {
     text-overflow:ellipsis;
     flex-wrap:wrap;
 }
+
+/* Style for "caption" text */
+p.caption {
+    font-family: 'Arial', Charcoal, sans-serif;
+    font-size: 13px;
+    margin-left: 0px;
+    padding: 0px 0px;
+    color: darkslategrey;
+    text-overflow:ellipsis;
+    flex-wrap:wrap;
+}
